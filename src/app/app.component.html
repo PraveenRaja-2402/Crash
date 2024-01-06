@@ -1,8 +1,8 @@
 <header class="absolute w-full">
 
   <!-- this for top stripe  -->
-  <div class="bg-slate-800">
-    <div class="container mx-auto text-white py-2">
+  <div class="bg-slate-800 hidden lg:block">
+    <div class="container text-white py-2">
       <ul class="flex justify-between">
         <li>
           All course 28% off for <span class="text-emerald-500">Librarian people's.</span>
@@ -94,7 +94,12 @@
     </div>
   </div>
 
-  <div class="container mx-auto  bg-red-500">
+  <div class=" flex container border border-emerald-500 mt-10 rounded-xl">
+
+    <a href="">
+      <img src="../assets/logo.png" alt="">
+    </a>
+
     <ul class="flex">
       <li class="mx-3 px-5 py-3">
         <a [routerLink]="['']">Home</a>
@@ -112,7 +117,15 @@
         <a [routerLink]="['contact']">Contact</a>
       </li>
     </ul>
+
+    <ul class="flex">
+      <li>1</li>
+      <li>2</li>
+    </ul>
   </div>
+  
+
+
 
 </header>
 <router-outlet></router-outlet>
